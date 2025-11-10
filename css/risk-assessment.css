@@ -1,0 +1,130 @@
+body
+{
+    background-color: #2e3440;
+    text-align: center;
+    padding: 16px;
+}
+
+#main-logo
+{
+    width: 30%;
+}
+
+#text-logo
+{
+    font-family: 'Outfit', sans-serif;
+    color: #eceff4;
+    margin-top: -8px;
+    font-size: 48px;
+}
+
+#header
+{
+    font-family: 'Outfit', sans-serif;
+    font-size: 36px;
+    color: white;
+}
+
+.questions
+{
+    background-color: #3b4252;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 24px;
+    border-radius: 16px;
+    text-decoration:solid;
+    text-align: center;
+}
+
+.answer
+{
+    transition-duration: 100ms;
+    background-color: #4c566a;
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.answer:hover
+{
+    transition-duration: 100ms;
+    color: #4c566a;
+    background-color: white;
+}
+
+#risk-header
+{
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 24px;
+}
+
+#risk-total
+{
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 48px;
+    border-radius: 8px;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 16px;
+    background-color: #a3be8c;
+}
+
+#overview-div
+{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overview-category
+{
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 24px;
+}
+
+#overview-text
+{
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 16px;
+}
+
+h3
+{
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 20px;
+}
+
+.tip
+{
+    display: flex;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4c566a;
+    border-radius: 16px;
+    padding: 16px 32px;
+    align-items: center; /* centers the image and text vertically */
+}
+
+.tip-text
+{
+    flex: 80%;
+    color: white;
+    font-family: 'DM Mono', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}

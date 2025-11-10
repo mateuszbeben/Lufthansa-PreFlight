@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lufthansa PreFlight</title>
+        <link rel="icon" type="image/x-icon" href="/img/logo.png">
+        <link rel="stylesheet" type="text/css" href="css/risk-assessment.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit|Roboto|DM Mono">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <img id="main-logo" src="img/dlh.png" width="400px">
+        <h1 id="text-logo">PreFlight®</h1><br><br>
+        <h1 id="header">RISK ASSESSMENT (FAA)</h1>
+        <div class="questions" id="q1">
+            <b>1. How did you sleep?</b><br>
+            <div class="answer" id="q1-1" data-value="2">Did not sleep well or less than 8 hours</div>
+            <div class="answer" id="q1-2" data-value="0">Slept well</div>
+        </div>
+        <div class="questions" id="q2" hidden>
+            <b>2. How do you feel?</b><br>
+            <div class="answer" id="q2-1" data-value="4">Have a cold or ill</div>
+            <div class="answer" id="q2-2" data-value="0">Feel great</div>
+            <div class="answer" id="q2-3" data-value="2">Feel a bit off</div>
+        </div>
+        <div class="questions" id="q3" hidden>
+            <b>3. What is the weather at the destinaion?</b><br>
+            <div class="answer" id="q3-1" data-value="1">VFR</div>
+            <div class="answer" id="q3-2" data-value="3">MVFR</div>
+            <div class="answer" id="q3-4" data-value="4">IFR/LIFR</div>
+        </div>
+        <div class="questions" id="q4" hidden>
+            <b>4. How is the day going?</b><br>
+            <div class="answer" id="q4-1" data-value="3">Seems like one thing after another (late, making errors, out of step)</div>
+            <div class="answer" id="q4-2" data-value="0">Great day</div>
+        </div>
+        <div class="questions" id="q5" hidden>
+            <b>5. Is the flight</b><br>
+            <div class="answer" id="q5-1" data-value="1">Day?</div>
+            <div class="answer" id="q5-2" data-value="3">Night?</div>
+        </div>
+        <div class="questions" id="q6" hidden>
+            <b>6. Are you in a rush to get off the ground?</b><br>
+            <div class="answer" id="q6-1" data-value="3">Yes</div>
+            <div class="answer" id="q6-2" data-value="1">No</div>
+        </div>
+        <div class="questions" id="q7" hidden>
+            <b>7. Is the departure and/or arrival area busy?</b><br>
+            <div class="answer" id="q7-1" data-value="3">Only departure/arrival</div>
+            <div class="answer" id="q7-2" data-value="6">Both are busy</div>
+            <div class="answer" id="q7-3" data-value="0">Neither of them</div>
+        </div>
+        <div id="results" hidden>
+            <h2 id="risk-header">Your total Risk Score is:</h2>
+            <div id="risk-total"><b>0 pts</b></div><br>
+            <div id="overview-div">
+                <h3 id="overview-category">Not Complex Flight</h3>
+                <p id="overview-text">
+                    Low overall risk. The flight should be routine and predictable, with minimal workload or environmental challenges.
+                </p>
+            </div><br>
+            <h3>Useful tips</h3>
+            <div class="tip">
+                <div style="flex: 20%; text-align: left;">
+                    <img src="img/tip.png" width="64px">
+                </div>
+                <div class="tip-text" id="tip-text-1">
+                    Review weather and NOTAMs (METAR/TAF, active runways).
+                </div>
+            </div>
+        </div>
+        <script src="js/risk-assessment.js"></script>
+    </body>
+</html>
